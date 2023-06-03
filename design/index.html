@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/29950e314c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#mywork">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Samurai programmer</p>
+                <h1>Hi, I'm <br> <span>Esha</span><br>Annamani</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-----------------about----------------------->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Esha Annamani. I'm doing my Bachelor's degree Computer Science and Engineering in Coimbatore Institute of Technology. I'm eagerly waiting to join my Internship 
+                        in Bounteous, India. I love coding. I love to explore new things. I'm a nature lover. I love music. I love to do yoga. I'm pretty good at following healthy lifestyle.</p>
+                    <div class= "tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('soft skills')">Soft Skills</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem Solving</span><br>I love to Solve problems.</li>
+                            <li><span>Python</span><br>My preffered Language to Code.</li>
+                            <li><span>Web Development</span><br>One of my interested domain to learn.</li>
+                        
+                        </ul>
+                    </div>
+      
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-Present</span><br>B.E Computer Science Engineering - Coimbatore Institute of Technology, Coimbatore<br>CGPA - 9.11</li>
+                            <li><span>2018-2019</span><br>HSC - Bharath Montessori Matric Higher Secondary School, Ilanji.<br>Percentage - 94.5</li>
+                            <li><span>2016-2017</span><br>HSC - Bharath Montessori Matric Higher Secondary School, Ilanji.<br>Percentage - 97.4</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="soft skills">
+                        <ul>
+                            <li><span>Team Player</span><br>I'm a team player and adaptive.I would like to interact with people.</li>
+                            <li><span>Time Management</span><br>I'm good at managing my time.I will complete my work at correct time.</li>
+                            <li><span>Positive Thinking</span><br>I'm a person with thought "Everything Happens for a Good Reason".So I would take everything Positively.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div> 
+            
+        </div>
+    </div> 
+    <!------------------Hobbies--------------------->
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">My hobbies</h1>
+            <div class="hobbies-list">
+                <div>
+                    <i class="fa-solid fa-peace"></i>
+                    <h2>Yoga</h2>
+                    <p>I love to do yoga. Doing yoga creates mental clarity and calmness and increases body awareness. It relieves chronic stress patterns and relaxes the mind. It centers attention and sharpens concentration. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-hand-peace"></i>
+                    <h2>Cooking</h2>
+                    <p>I love to cook my own food which keeps me to take healthy foods of my own interest.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-user-music"></i>
+                    <h2>Music</h2>
+                    <p>I used to here music whenever i feel tired of doing things which gives me positive energy to continue with work.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------My work--------------------->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list"> 
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Safety Index Estimation</h3>
+                    <p>Location-specific safety index estimation using ML techniques - Estimated the safety index based on the crime analysis for law 
+                    enforcement agencies.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work-list"> 
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Mqtt Intrusion Detection System</h3>
+                    <p>Intrusion Detection System was built to detect and classify Intrusion Mqtt-IoT network.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work-list"> 
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>E-commerce Fashion Website Design</h3>
+                    <p>Presented a professional e-commerce webpage on Fashion that has a vast collection of fashion items beautifully presented in a webpage using HTML, CSS, and JS, thereby providing it with professional look.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+    <!----------------------------Contact------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>eshaannamani@gmail.com</p>
+                    <p><i class="fa-light fa-mobile"></i>6379327540</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100075829175118"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/ esha-a-b90b0a218"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> 
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+            
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+            
+        }
+    </script>
+
+</body>
+</html>
